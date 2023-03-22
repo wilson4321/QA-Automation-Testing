@@ -1,0 +1,58 @@
+1)Pedir Background a Manuel
+
+SAUCEDEMOLOGINPAGE
+ 
+2)Logearse en la pagina
+
+//*[@name='user-name'] ---->TextFile
+//*[@id='password'] ----> TextFile
+//*[@id='login-button'] ------> Button
+
+SAUCEDEMOPRODUCTSPAGE
+3) Una vez en la pagina de productos, seleccionar el filtro empleando distintas opciones
+//*[@class='product_sort_container'] ----->Select 
+
+[options]
+
+@value='az': ordenar por nombre de la a a la z
+@value='za': ordenar por nombre de la z a la a
+@value = 'lohi': ordenar de menor a mayor(low to high)
+@value = 'hilo': ordenar de mayor a menor(high to low)
+
+
+4)Seleccionar el listado de productos... Son un total de 6
+//*[@class='inventory_list']/descendant::div[@class='inventory_item'] :Señala toda la informaciónde cada producto
+//*[@class='inventory_list']//descendant::div[@class='inventory_item_name']: Señala el nombre de cada producto
+//*[@class='inventory_list']//descendant::div[@class='inventory_item_price']: Señala el precio de cada producto
+Selenium WebElement: https://www.browserstack.com/guide/selenium-webelement-commands?utm_source=google&utm_medium=cpc&utm_platform=paidads&utm_content=645344788786&utm_campaign=Search-DSA-NB-T2Geo-Exp&utm_campaigncode=Selenium+1003668&utm_term=+&gclid=EAIaIQobChMIvsWP3dqu_QIVy8mGCh38-AIlEAAYASAAEgKRuPD_BwE
+Mirar getText método para obtener texto del elemeto web en cuestión
+
+5) Agregar al carrito de compra
+//button[@name='add-to-cart-sauce-labs-backpack']:  señala el botón addcar para el elemento sauce-labs-backpack
+//button[@name='add-to-cart-sauce-labs-bike-light']: señala el botón addcar para el elemento cart-sauce-labs-bike-light
+
+
+6) Carrito de compra con productos agregados
+//*[@class='shopping_cart_link'] 
+
+
+SAUCEDEMOYOURCARTPAPE
+7) Observar lista de productos agregados al carrito, dar clic en el botón Checkout 
+//*[@id='checkout'] --> botón checkout
+
+SAUCECHECKOUTINFORMATIONPAPE
+8)
+//*[@id ='first-name'] --->	TextField
+//*[@id ='last-name'] ---> TextField
+//*[//*[@id ='postal-code']--->TextField
+//*[@id ='continue'] ---> button
+
+SAUCECHECKOUTOVERVIEWPAPE
+9)Obtener información de los siguientes campos
+//*[contains(text(),'SauceCard')] -----> SaudeCard#.... -> TextField
+//*[contains(text(),'Item total')] ----->ItemTotal: $.... --> Texfield
+//*[contains(text(),'Tax')]------> Tax: $ ... -> TextField
+//*[contains(text(),'Total')] ----->Total: $...-> TextField
+
+10)
+//*[@id='finish'] -> darclic en el botón finalizar

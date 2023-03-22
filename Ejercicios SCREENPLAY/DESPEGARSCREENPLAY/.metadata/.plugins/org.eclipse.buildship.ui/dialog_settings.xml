@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.buildship.ui.wizard.project.import">
+<<<<<<< HEAD
+		<item key="project_location" value="C:\Users\wilson.araque\Desktop\Repositorio GitHub\Semillero.2023-1\SCREENPLAYSAUCEDEMO\.gradle"/>
+		<item key="apply_working_sets" value="false"/>
+=======
+		<item key="project_location" value="C:\Users\camila.morales\Downloads\Semillero\Semillero.2023-1\SCREENPLAYSAUCEDEMO"/>
+		<item key="apply_working_sets" value="true"/>
+>>>>>>> 20e2e38956c4871fe85a9756963780a00516337e
+		<list key="working_sets">
+		</list>
+	</section>
+</section>

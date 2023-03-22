@@ -1,0 +1,10 @@
+{
+  "users": [
+    {
+      "id": "101",
+      "name": "wilson",
+      "email": "wilson@araque.com",
+      "status": "active"
+    }
+  ]
+}

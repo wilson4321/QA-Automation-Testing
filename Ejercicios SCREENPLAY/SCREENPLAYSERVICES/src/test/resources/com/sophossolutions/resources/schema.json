@@ -1,0 +1,36 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "type": "object",
+    "properties": {
+      "amount": {
+        "type": "number"
+      },
+      "base": {
+        "type": "string"
+      },
+      "date": {
+        "type": "string"
+      },
+      "rates": {
+        "type": "object",
+        "properties": {
+          "GBP": {
+            "type": "number"
+          },
+          "USD": {
+            "type": "number"
+          }
+        },
+        "required": [
+          "GBP",
+          "USD"
+        ]
+      }
+    },
+    "required": [
+      "amount",
+      "base",
+      "date",
+      "rates"
+    ]
+  }
