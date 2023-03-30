@@ -1,0 +1,6 @@
+#Selecciona navegador
+webdriver.driver = chrome
+
+#Carga el driver
+webdriver.chrome.driver = chromedriver.exe
+#webdriver.chrome.driver = "/src/carpeta/chromedriver.exe"
