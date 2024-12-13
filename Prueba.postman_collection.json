@@ -1,0 +1,88 @@
+{
+	"info": {
+		"_postman_id": "8e1fc870-3a1b-445a-a7bf-4bbdbf4fedeb",
+		"name": "Prueba",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "40348388"
+	},
+	"item": [
+		{
+			"name": "https://gorest.co.in/public/v2/users/7565796",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "5c38ff8566cee5ccb3f7181ae2d9cb7084edca281bd59e212995d70288966576"
+					}
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "5c38ff8566cee5ccb3f7181ae2d9cb7084edca281bd59e212995d70288966576",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Laura\",\r\n    \"email\": \"flor@hotmail.com\",\r\n    \"gender\": \"female\",\r\n    \"status\": \"active\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "https://gorest.co.in/public/v2/users"
+			},
+			"response": []
+		},
+		{
+			"name": "https://gorest.co.in/public/v2/users",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "https://gorest.co.in/public/v2/users"
+			},
+			"response": []
+		},
+		{
+			"name": "https://gorest.co.in/public/v2/users",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "5c38ff8566cee5ccb3f7181ae2d9cb7084edca281bd59e212995d70288966576"
+					}
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 7565795,\r\n    \"name\": \"Avadhesh perro\",\r\n    \"email\": \"avadhesh_chaturi@frami.test\",\r\n    \"gender\": \"male\",\r\n    \"status\": \"inactive\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "https://gorest.co.in/public/v2/users/7565796"
+			},
+			"response": []
+		},
+		{
+			"name": "https://gorest.co.in/public/v2/users/7565796",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "5c38ff8566cee5ccb3f7181ae2d9cb7084edca281bd59e212995d70288966576"
+					}
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": "https://gorest.co.in/public/v2/users/7565796"
+			},
+			"response": []
+		}
+	]
+}
